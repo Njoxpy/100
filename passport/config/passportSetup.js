@@ -5,6 +5,7 @@ passport.use(
   new GoogleStrategy(
     {
       // options for google stats
+      callbackURL: "/auth/google/redirect",
       ClientID: process.env.ClientID,
       ClientSecret: process.env.ClientSecret,
     },

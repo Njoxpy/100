@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
-app.use("/api/v1", authRoutes);
+app.use(authRoutes);
 
 // SET VIEW ENGINE.
 app.set("view engine", "ejs");
@@ -33,3 +33,5 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Listening at: ${PORT}`);
 });
+
+// http://localhost:5000/auth/google/redirect

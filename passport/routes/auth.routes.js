@@ -1,4 +1,5 @@
 const express = require("express");
+const passport = require("passport");
 const authRoutes = express.Router();
 
 authRoutes.get("/auth", (req, res) => {
@@ -13,8 +14,7 @@ authRoutes.get("/login", (req, res) => {
 authRoutes.get("/logout", (req, res) => {
   res.send("logging out");
 });
-authRoutes.get("/google", (req, res) => {
-  res.send("logging with google");
-});
+
+authRoutes.get("/google", passport.authenticate("google"));
 
 module.exports = authRoutes;
