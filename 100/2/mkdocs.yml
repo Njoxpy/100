@@ -1,0 +1,34 @@
+site_name: My Backend Project
+theme:
+  name: readthedocs
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Setup:
+      - Local Development: setup/local-dev.md
+      - Environments & Secrets: setup/environments.md
+  - Database:
+      - ERD: database/erd.md
+      - Seed Data: database/seed-data.md
+  - Auth:
+      - Auth Flow: auth/auth-flow.md
+      - Roles & Permissions: auth/roles-permissions.md
+  - API Reference:
+      - Overview: api/overview.md
+      - Endpoints: api/endpoints.md
+      - Errors: api/errors.md
+  - Testing:
+      - Strategy: testing/unit-vs-integration.md
+      - Setup: testing/test-setup.md
+  - DevOps:
+      - Deployment: devops/deployment.md
+      - Monitoring & Logs: devops/monitoring.md
+      - Backups: devops/backups.md
+  - Guides:
+      - Contributing: guides/contributing.md
+      - FAQ: guides/faq.md
